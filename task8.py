@@ -30,4 +30,4 @@ def make_person_clap(person: Person): ...
 
 
 def let_worker_act(worker: ServiceWorker, func: Callable([ServiceWorker], None)):
-    make_person_clap(worker)
+    func(worker)
